@@ -38,11 +38,11 @@ const Translate = () => {
                 label="Select a Language"
                 options={options}
                 selected={language}
-                onLanguageChange={setLanguage}
+                onSelectedChange={setLanguage}
             />
             <hr />
             <h3 className="ui header"></h3>
-            <Convert />
+            <Convert text={text} language={language}/>
         </div>
     );
 }
